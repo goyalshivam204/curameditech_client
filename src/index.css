@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: 0;
+    border: 0;
+    /* background-color: transparent; */
+    /* color: transparent; */
+}
+
+
+:root{
+
+    --color-white: #fff;
+    --color-white-2: #DFF6FF;
+    --color-black-2: #06283D;
+    --color-teal-2: #256D85;
+    --color-blue-2: #47B5FF;
+
+    --color-light-black: #06283D;
+    --color-light-teal: #256D85;
+    --color-light-blue: #47B5FF;
+    --color-dark-white: #DFF6FF;
+    --color-bg: #256D85;
+    --color-bg-2: #06283D;
+    --color-font-color: #fff;
+    /* --color-bg-variant: #fff; */
+    --color-bg-variant: #DFF6FF;;
+    --color-font-color-variant: #256D85;
+    --color-font-color-variant-2: #06283D;
+    --color-bg-btn: #06283D;
+    --color-red: #F55050;
+    /* --linear-gradient: linear-gradient(to right,#256D85 , rgba(0, 0, 0, 0.4)); */
+    font-size: 16px;
+}
+
+body{
+    /* background-image: url("./assets/bg2.avif"); */
+    /* background-image: var(--linear-gradient); */
+    /* background-image: linear-gradient(to right, var(--color-light-black),transparent); */
+    /* background-repeat: repeat; */
+    /* background-color: var(--color-light-blue); */
+  
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+button:hover{
+    box-shadow: 0 0 1px 1px var(--color-light-blue);
+}
+
+.center {
+    text-align: center;
+}
+
+.font-sm{
+    font-size: 0.6rem;
+}
+
+.font-rg{
+    font-size: 1rem;
+}
+
+.font-md{
+    font-size: 1.4rem;
+}
+
+.font-lg{
+    font-size: 1.8rem;
+}

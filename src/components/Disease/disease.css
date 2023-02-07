@@ -1,0 +1,96 @@
+.disease{
+    color: var(--color-light-teal);
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+}
+
+.disease__section{
+    padding: 1rem 0 1rem 0;
+}
+
+
+.disease__section__one{
+    background-color: var(--color-bg-variant);
+    color: var(--color-font-color-variant);
+  
+}
+
+.disease__section__two {
+    background-color: var(--color-bg);
+    color: var(--color-font-color);
+}
+
+.disease__section__three {
+    background-color: var(--color-bg-variant);
+    color: var(--color-font-color-variant);
+   
+}
+
+.disease__section__four {
+    background-color: var(--color-bg);
+    color: var(--color-font-color);
+}
+
+.disease__input {
+    min-width: 250px;
+    padding: 8px 8px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid var(--color-bg);
+    border-radius: 4px;
+    /* box-sizing: border-box; */
+}
+
+.disease__btn{
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.3rem 0.8rem;
+    margin: 0.3rem 0.3rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--color-bg-btn);
+    color: white;
+}
+
+
+
+.disease__btn__predict{
+    background-color: var(--color-bg);
+}
+
+.disease__btn__add{
+    background-color: var(--color-bg);
+}
+
+.disease .selected {
+    min-height: 4rem;
+}
+
+.disease .suggestions{
+    margin-top: 1rem;
+    min-height: 4rem;
+    max-height: 12rem;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.disease .suggestions::-webkit-scrollbar {
+    width: 0.4rem;
+    scroll-behavior: smooth;
+    border-radius: 1rem;
+    background-color: var(--color-bg-variant);
+}
+
+.disease .suggestions::-webkit-scrollbar-track {
+    background-color: var(--color-bg-variant);
+    border-radius: 1rem;
+}
+
+.disease .suggestions::-webkit-scrollbar-thumb {
+    background-color: var(--color-font-color-variant-2);
+    border-radius: 1rem;
+    margin: 2px 4px;
+}
+
