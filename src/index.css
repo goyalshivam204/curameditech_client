@@ -16,7 +16,8 @@
 :root{
 
     --color-white: #fff;
-    --color-white-2: #DFF6FF;
+    /* --color-white-2: #DFF6FF; */
+    --color-white-2: #ebeced;
     --color-black-2: #06283D;
     --color-teal-2: #256D85;
     --color-blue-2: #47B5FF;
@@ -24,12 +25,14 @@
     --color-light-black: #06283D;
     --color-light-teal: #256D85;
     --color-light-blue: #47B5FF;
-    --color-dark-white: #DFF6FF;
+    /* --color-dark-white: #DFF6FF; */
+    --color-dark-white: #ebeced;
     --color-bg: #256D85;
     --color-bg-2: #06283D;
     --color-font-color: #fff;
     /* --color-bg-variant: #fff; */
-    --color-bg-variant: #DFF6FF;;
+    /* --color-bg-variant: #DFF6FF;; */
+    --color-bg-variant: #ebeced;
     --color-font-color-variant: #256D85;
     --color-font-color-variant-2: #06283D;
     --color-bg-btn: #06283D;
@@ -49,6 +52,8 @@ body{
 body::-webkit-scrollbar {
     display: none;
 }
+
+
 
 button:hover{
     box-shadow: 0 0 1px 1px var(--color-light-blue);
@@ -72,4 +77,9 @@ button:hover{
 
 .font-lg{
     font-size: 1.8rem;
+}
+
+.required:after {
+    content: " *";
+    color: red;
 }

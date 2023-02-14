@@ -3,7 +3,6 @@
     min-height: 15rem;
     display: flex;
     flex-direction: row;
-    background-color: antiquewhite;
     justify-content: space-around;
     background: var(--color-bg-2);
     color: var(--color-font-color);
@@ -32,10 +31,13 @@
     color: var(--color-blue-2);
 }
 
-.footer__logo{
-    /* height: 6rem; */
-    /* background-color: var(--color-bg); */
-    /* border-radius: 1rem; */
+
+.footer__copyright{
+    padding: 0.3rem;
+    text-align: center;
+    background-color: var(--color-bg-variant);
+    color: var(--color-bg-2);
+    font-weight: 400;
 }
 
 @media screen and (max-width: 1024px) {

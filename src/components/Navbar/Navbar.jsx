@@ -18,23 +18,19 @@ const Navbar = () => {
                     <GiHamburgerMenu fontSize={28}  />    
                 </div>
             </div>
-            <div className="nav__right toggling-item">
+            <div className="nav__right toggling-item display__none">
                 <NavLink to="/" className={({ isActive }) => isActive ? "nav__link__active" : "nav__link"}>
                     Home
                 </NavLink>
                 <NavLink to="/disease_prediction" className={({ isActive }) => isActive ? "nav__link__active" : "nav__link"}>
                     Predictor
                 </NavLink>
-                <NavLink to="/sign_up" className={({ isActive }) => isActive ? "nav__link__active" : "nav__link"}>
+                {/* <NavLink to="/sign_up" className={({ isActive }) => isActive ? "nav__link__active" : "nav__link"}>
                     Sign Up
-                </NavLink>
+                </NavLink> */}
                 <NavLink to="/sign_in" className={({ isActive }) => isActive ? "nav__link__active" : "nav__link"}>
                     Sign In
-                </NavLink>
-                <NavLink to="/help" className={({ isActive }) => isActive ? "nav__link__active" : "nav__link"}>
-                    Help
-                </NavLink>
-                               
+                </NavLink>                           
             </div>
         </nav>
     )

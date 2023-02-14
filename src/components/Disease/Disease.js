@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-
+import { AiOutlineCheckCircle } from "react-icons/ai";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import {obj} from './data.js';
 import "./disease.css"
 import MyProgressBar from './MyProgressBar.js';
 import axios from 'axios';
+import { padStart } from 'lodash';
 
 // to allows headers and cookie on the server also.
 axios.defaults.headers.common["Access-Control-Allow-Origin"] = "*";
@@ -39,11 +40,19 @@ function Disease() {
             toast.error("Please, Select at least 5 symptoms")
             return;
         }
-        const postBody = obj;
+        const postBody = {...obj}
+      
         selected.forEach((field)=>{
             postBody[field] = 1;
         });
 
+        console.log("keys: ")
+        Object.keys(postBody).forEach((key)=>{
+            if(postBody[key] === 1){
+                console.log(key);
+            }
+        })
+        // console.log(selected);
         const response = await axios.post("http://localhost:8000/predict",postBody)
         setPredictedDisease(response.data[1]);
         setConfidenceScore(response.data[0]);
@@ -117,7 +126,7 @@ function Disease() {
                 <h2 className='center'>Suggestions</h2>
                 <div className="suggestions">
                     {suggestions.map((field, id) => {
-                        return field.includes(fwd_value(value)) ? <button className="suggestions_button disease__btn font-rg" key={id} onClick={selectField} value={field}>{rev_value(field)}</button> : "";
+                        return field.includes(fwd_value(value)) ? <button className="disease__suggestions__btn disease__btn font-rg" key={id} onClick={selectField} value={field}>{rev_value(field)} </button> : "";
                     })}
                 </div>
             </section>

@@ -1,0 +1,32 @@
+.home {
+    min-height: 90vh;
+}
+
+.home__section__one{
+    background-image: url("../../assets/home4_blur_30.jpg");
+    background-size: cover;
+    height: 100vh;
+    color: var(--color-font-color);
+}
+
+.home__section__one__left{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.home__brandName{
+    font-size: 4rem;
+}
+
+.home__quote{
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 600px){
+    .home__brandName{
+        font-size: 2.5rem;
+    }    
+}

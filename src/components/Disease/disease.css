@@ -60,6 +60,12 @@
     background-color: var(--color-bg);
 }
 
+.disease__suggestions__btn{
+    /* display: flex; */
+    /* flex-wrap: nowrap; */
+    /* align-items: center; */
+}
+
 .disease__btn__add{
     background-color: var(--color-bg);
 }

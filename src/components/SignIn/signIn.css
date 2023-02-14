@@ -1,0 +1,105 @@
+.signIn{
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-white-2);
+}
+.signIn__boxShadow {
+    margin: 2rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px  10px 10px 10px;
+    overflow: hidden;
+    box-shadow: 0 0 2px 2px gainsboro;
+}
+
+
+
+.signIn__img {
+    height: 400px;
+    /* border-radius: 10px 0px 0px 10px; */
+}
+
+
+.signIn__right {
+    height: 400px;
+    background-color: var(--color-white);
+    padding: 2rem 2rem;
+    border-radius: 0px 10px 10px 0px;
+    color: var(--color-font-color-variant);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.signIn__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+
+.signIn__header {
+    text-align: center;
+}
+
+.signIn__item {
+    width: 100%;
+}
+
+.signIn__input {
+    font-size: 1rem;
+    padding: 0.4rem 1rem;
+    border-radius: 6px;
+    width: 100%;
+    /* display: block; */
+    border: 2px solid var(--color-bg);
+}
+
+.signIn__btn {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 0.4rem 1rem;
+    border-radius: 8px;
+    /* border: 3px solid var(--color-white); */
+    background-color: var(--color-bg-2);
+    color: var(--color-font-color)
+}
+
+.signIn__orOption {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.signIn__orOption :nth-child(1) {
+    width: 80px;
+    height: 2px;
+    background-color: gray;
+}
+
+.signIn__orOption :nth-child(3) {
+    width: 80px;
+    height: 2px;
+    background-color: gray;
+}
+
+
+.signIn__redirect{
+
+}
+
+.signIn__redirect:hover{
+    color: var(--color-blue-2)
+}
+
+@media screen and (max-width: 650px) {
+    .signIn__left{
+        display: none;
+    }
+
+}
