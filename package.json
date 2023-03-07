@@ -43,5 +43,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "http://ec2-3-108-54-152.ap-south-1.compute.amazonaws.com:4000"
 }

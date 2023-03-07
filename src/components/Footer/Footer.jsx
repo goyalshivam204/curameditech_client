@@ -1,21 +1,43 @@
 import React from 'react'
 import "./footer.css"
 import { AiOutlineHome, AiOutlineMail, AiOutlinePhone } from "react-icons/ai"
+import {GiWrappedSweet} from "react-icons/gi"
 import { AiOutlineLinkedin, AiOutlineFacebook, AiOutlineInstagram } from "react-icons/ai"
+import {FaLaptopMedical,FaHandHoldingMedical,FaBookMedical,FaHeart} from "react-icons/fa";
+import { useNavigate } from 'react-router-dom'
 import Logo from "../../assets/logo5.png";
 
 const Footer = () => {
+    const navigate = useNavigate();
   return (
     <>
         <footer className='footer'>
-            <section className="footer__section footer__section__one">
+            {/* <section className="footer__section footer__section__one">
                 <h4 className='footer__item__header'>ABOUT</h4>
                 <div className="footer__item">
-                    {/* <img className='footer__logo' src={Logo} alt="" /> */}
+                    <img className='footer__logo' src={Logo} alt="" />
                 </div>
-            </section>
+            </section> */}
             <section className="footer__section footer__section__two">
                 <h4 className='footer__item__header'>SERVICES</h4>
+                <div   className="footer__item" onClick={()=>{navigate("/disease_prediction")}}>
+                    <FaLaptopMedical size={"1.5rem"} />
+                    <div>
+                        Predict Your Disease
+                    </div>
+                </div>
+                <div   className="footer__item" onClick={()=>{navigate("/diabetes_prediction")}}>
+                    <GiWrappedSweet size={"1.5rem"} />
+                    <div>
+                        Diabetes Prediction 
+                    </div>
+                </div>
+                 <div   className="footer__item" onClick={()=>{navigate("/heart_prediction")}}>
+                    <FaHeart size={"1.5rem"}/>
+                    <div>
+                        Heart Prediction
+                    </div>
+                </div>
             </section>
             <section className="footer__section footer__section__three">
                 <h4 className='footer__item__header'>FOLLOW US</h4>

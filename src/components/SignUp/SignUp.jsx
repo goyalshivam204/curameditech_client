@@ -21,30 +21,31 @@ const SignUp = () => {
   return (
     <div className='signUp'>
       <div className='signUp__boxShadow'>
-        <div className='signUp__left'>
-          <img className='signUp__img' onLoad={() => { setImageLoaded(true) }} src={DoctorImg} alt="" />
-        </div>
-        {imageLoaded ?
-          <div className="signUp__right">
-            <form onSubmit={onSubmitHandler} className='signUp__form'>
-              <div className="signUp__item">
-                <h2 className="signUp__header">Sign Up</h2>
-              </div>
-
-              <div className="signUp__item">
-                {/* <label className='signUp__label' htmlFor='username' >Username: </label> */}
-                <input className='signUp__input' required placeholder='username' type="text" name="username" id="username" />
-              </div>
-              <div className="signUp__item">
-                {/* <label className='signUp__label ' htmlFor='password' ></label> */}
-                <input className='signUp__input' required type="password" placeholder='password' name="password" id="password" />
-              </div>
-              <button className='signUp__btn' type='submit'> Submit </button>
-            </form>
-          
-            
-          </div> : ""
-        }
+       
+        <form className='signUp__form'>
+           <h2 className="signUp__header center">Sign Up</h2>
+          <div className="signUp__item">
+            <input className='signIn__input' required placeholder='username' type="text" name="username" id="username" />
+          </div>
+          <div className="signUp__item">
+            <input className='signIn__input' required placeholder='email' type="email" name="email" id="email" />
+          </div>
+          <div className="signUp__item">
+              <input className='signIn__input' required type="password" placeholder='password' name="password" id="password" />
+          </div>
+          <div className="signUp__item">
+            <input className='signIn__input' required placeholder='first name' type="text" name="firstname" id="firstname" />
+          </div>
+          <div className="signUp__item">
+            <input className='signIn__input' required placeholder='last name' type="text" name="lastname" id="lastname" />
+          </div>
+        
+       
+          <button type='submit' className="signUp__btn">
+            Submit
+          </button>
+        </form>
+       
       </div>
     </div>
   )

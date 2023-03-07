@@ -1,0 +1,87 @@
+.heart {
+    color: var(--color-light-teal);
+}
+
+.heart__section {
+    padding: 1rem 0 1rem 0;
+}
+
+.heart__section__one {
+    background-color: var(--color-bg-variant);
+    color: var(--color-font-color-variant);
+
+}
+
+.heart__section__two {
+    background-color: var(--color-bg);
+    color: var(--color-font-color);
+}
+
+.heart__section__three {
+    background-color: var(--color-bg-variant);
+    color: var(--color-font-color-variant);
+
+}
+
+.heart__form {
+    max-width: 1000px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 0.8rem;
+}
+
+.heart__label {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.heart__item {
+    background-color: var(--color-bg);
+    color: var(--color-font-color);
+    font-size: 1rem;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.3rem;
+    width: 100%;
+}
+
+
+
+.heart__input {
+    font-size: 1rem;
+    padding: 0.4rem 1rem;
+    border-radius: 6px;
+    /* align-self: flex-end; */
+    /* width: 100%; */
+    /* display: block; */
+    text-align: center;
+    border: 2px solid var(--color-bg);
+}
+
+
+.heart__btn {
+    margin: auto;
+    font-size: 1.4rem;
+    padding: 0.4rem 2rem;
+    border-radius: 8px;
+    background-color: var(--color-bg-2);
+    color: var(--color-font-color);
+    grid-column: 1/-1;
+}
+
+@media screen and (max-width: 800px) {
+    .heart__form {
+        grid-template-columns: auto auto;
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .heart__form {
+        grid-template-columns: auto;
+        margin: 20px;
+    }
+}

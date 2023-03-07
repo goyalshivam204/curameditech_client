@@ -25,12 +25,19 @@ const Navbar = () => {
                 <NavLink to="/disease_prediction" className={({ isActive }) => isActive ? "nav__link__active" : "nav__link"}>
                     Predictor
                 </NavLink>
+                <NavLink to="/diabetes_prediction" className={({ isActive }) => isActive ? "nav__link__active" : "nav__link"}>
+                    Diabetes
+                </NavLink>
+                <NavLink to="/heart_prediction" className={({ isActive }) => isActive ? "nav__link__active" : "nav__link"}>
+                    Heart
+                </NavLink>
+              
                 {/* <NavLink to="/sign_up" className={({ isActive }) => isActive ? "nav__link__active" : "nav__link"}>
                     Sign Up
                 </NavLink> */}
-                <NavLink to="/sign_in" className={({ isActive }) => isActive ? "nav__link__active" : "nav__link"}>
+                {/* <NavLink to="/sign_in" className={({ isActive }) => isActive ? "nav__link__active" : "nav__link"}>
                     Sign In
-                </NavLink>                           
+                </NavLink>                            */}
             </div>
         </nav>
     )

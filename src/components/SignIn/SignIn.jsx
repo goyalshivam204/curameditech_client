@@ -10,7 +10,7 @@ const SignIn = () => {
     e.preventDefault();
     // alert("submit")
     const reqBody = {
-      email: e.target.email.value,
+     
       username: e.target.username.value,
       password: e.target.password.value
     }

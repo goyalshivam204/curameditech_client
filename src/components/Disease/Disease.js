@@ -4,7 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import {obj} from './data.js';
 import "./disease.css"
-import MyProgressBar from './MyProgressBar.js';
+import MyProgressBar from '../MyProgressBar/MyProgressBar.js';
 import axios from 'axios';
 import { padStart } from 'lodash';
 
@@ -53,9 +53,14 @@ function Disease() {
             }
         })
         // console.log(selected);
-        const response = await axios.post("http://localhost:8000/predict",postBody)
-        setPredictedDisease(response.data[1]);
-        setConfidenceScore(response.data[0]);
+        try{
+            const response = await axios.post("/api/predict",postBody)
+            setPredictedDisease(response.data[1]);
+            setConfidenceScore(response.data[0]);
+        }catch(err){
+            console.log(err);
+        }
+        
     }
 
     const onChangeHandler = (e)=>{
