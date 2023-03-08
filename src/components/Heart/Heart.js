@@ -21,7 +21,7 @@ function Heart(){
         }
         console.log(obj);
         try{
-            const response = await axios.post("/api/heart",obj);
+            const response = await axios.post(process.env.REACT_APP_API_URL + "/api/heart",obj);
             console.log(response.data);
             setPrediction(response.data.prediction);
             setRisk(response.data.risk);

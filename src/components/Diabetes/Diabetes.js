@@ -23,7 +23,7 @@ function Diabetes(){
         }
         // console.log(obj);
         try{
-            const response = await axios.post("/api/diabetes",obj);
+            const response = await axios.post(process.env.REACT_APP_API_URL + "/api/diabetes",obj);
             console.log(response.data);
             setPrediction(response.data.prediction);
             setConfidenceScore(response.data.confidenceScore);

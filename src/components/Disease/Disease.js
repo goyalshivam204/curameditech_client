@@ -54,7 +54,7 @@ function Disease() {
         })
         // console.log(selected);
         try{
-            const response = await axios.post("/api/predict",postBody)
+            const response = await axios.post(process.env.REACT_APP_API_URL + "/api/predict",postBody)
             setPredictedDisease(response.data[1]);
             setConfidenceScore(response.data[0]);
         }catch(err){
